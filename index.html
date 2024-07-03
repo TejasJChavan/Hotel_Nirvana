@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nirvana</title>
+    <title>Hotel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +15,10 @@
   <body>
     <section id="home">
       <nav class="navbar flex">
-        <a href="#home" class="menu">Home</a>
+        <a href="#" class="menu">Home</a>
         <a href="#suites" class="menu">Suites</a>
-        <a href="#" class="menu">Location</a>
-        <a href="#" class="menu">Contact</a>
+        <a href="#location" class="menu">Location</a>
+        <a href="#contact" class="menu">Contact</a>
         <div class="user-icon">
           <img
             src="./assets/user-svgrepo-com.svg"
@@ -35,17 +35,94 @@
 
     <section id="suites">
       <div class="card">
-        <div class="titles">Presidential <br> Style <br> Suites</div>
-        <div class="knowmore">Know More</div>
+        <div class="titles">
+          Presidential <br />
+          Style <br />
+          Suites
+        </div>
+        <a href="#suites"><div class="knowmore">Know More</div></a>
       </div>
       <div class="card">
-        <div class="titles" style="color: white;">Bridal <br> Style <br> Suites</div>
-        <div class="knowmore" style="background-color: #46484D;">Know More</div>
+        <div class="titles" style="color: white">
+          Bridal <br />
+          Style <br />
+          Suites
+        </div>
+        <a href="#suites"
+          ><div class="knowmore" style="background-color: #46484d">
+            Know More
+          </div></a
+        >
       </div>
       <div class="card">
-        <div class="titles" style="color: black;">Penthouse <br> Style <br> Suites</div>
-        <div class="knowmore" style="background-color: #527A1D;">Know More</div>
+        <div class="titles" style="color: black">
+          Penthouse <br />
+          Style <br />
+          Suites
+        </div>
+        <a href="#suites"
+          ><div class="knowmore" style="background-color: #527a1d">
+            Know More
+          </div></a
+        >
       </div>
     </section>
+
+    <section id="location">
+      <div class="container">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2725.7113744944004!2d76.28906505692642!3d9.703495488232887!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1720014343136!5m2!1sen!2sin"
+            width="350"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="location-info">
+          <h1 class="address-title">
+            <img
+              src="./assets/icons8-location-48.png"
+              alt="Location"
+              style="height: 30px"
+            />
+            Location
+          </h1>
+          <h2 class="address-state">Kerala</h2>
+          <p class="address">
+            Peermedu City/Town Azhutha State/Province/Region Kerala Zip/Postal
+            Code 685531 Phone Number 04869 233 250
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="flexcontainer">
+        <div class="nirvana-logo"><a href="#">Nirvana</a></div>
+        <div class="contact-details">
+          <div class="contact-info">
+            Phone : +91 99999 99999 <br />
+            <a href="mailto:hotel.email@gmail.com" style="color: white;">Email : hotel.email@gmail.com</a>
+          </div>
+          <div class="icons">
+            <a href="#contact"
+              ><img
+                src="./assets/icons8-instagram-50.png"
+                alt="Instagram"
+                class="social-logo"
+            /></a>
+            <a href="#contact"
+              ><img
+                src="./assets/icons8-twitter-50.png"
+                alt="Twitter"
+                class="social-logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
