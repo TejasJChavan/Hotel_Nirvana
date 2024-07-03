@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #home {
+    background-color: rgb(156, 156, 156);
+    background-image: url("./assets/beach-min.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+    flex: 1;
+    width: 95%;
+    gap: 40px;
+    margin: auto;
+  }
+  
+  .menu {
+    font-family: "Inria Serif", serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    color: #b9b9b9;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+  
+  .navbar {
+    padding-top: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    filter: opacity(50%);
+    background-color: white;
+    margin-left: auto;
+    font-size: 100px;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .user-icon:hover {
+    transform: scale(1.1);
+    filter: opacity(70%);
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .hotel {
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .nirvana {
+    color: white;
+    letter-spacing: 60px;
+    font-size: 150px;
+    font-family: "Inspiration", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+  }
+  
+  #suites {
+    height: 100vh;
+    background-color: grey;
+    background-image: url("./assets/corridor-min.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  
+  }
+  
+  #suites > .card {
+      height: 75%;
+      width: 25%;
+      background-color: white;
+      border-radius: 50px;
+      transition: all 0.2s ease-in-out;
+      background-size: cover;
+  }
+  #suites > .card:hover{
+      transform: scale(1.1);
+  }
+  #suites > .card:nth-child(1){
+      background-image: url("./assets/hotel_room.jpeg");
+  }
+  #suites > .card:nth-child(2){
+      background-image: url("./assets/hotel_room_2.jpeg");
+  }
+  #suites > .card:nth-child(3){
+      background-image: url("./assets/hotel_room_3.jpeg");
+  }
+  .titles {
+      font-family: "Inria Serif", serif;
+      font-weight: 600;
+      letter-spacing: 4px;
+      font-size: 1.5rem;
+      margin-top: 10%;
+      padding-left: 50px;
+  }
+  .knowmore {
+      color: white;
+      background-color: #141710;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 30px 0 30px;
+      height: 50px;
+      width: 110px;
+      margin-top: 20px;
+      margin-left: 50px;
+  }
+  
