@@ -218,6 +218,9 @@ a {
 }
 
 @media (aspect-ratio < 1) {
+  .navbar {
+    display: none;
+  }
   .hotel {
     font-size: 5vh;
   }
