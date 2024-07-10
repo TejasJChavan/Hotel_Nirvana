@@ -16,13 +16,14 @@ a {
   background-size: cover;
   background-blend-mode: multiply;
   min-height: 100vh;
+  min-width: 100%;
 }
 
 .flex {
   display: flex;
   flex: 1;
   width: 95%;
-  gap: 40px;
+  gap: 4%;
   margin: auto;
 }
 
@@ -73,7 +74,7 @@ a {
   height: 80vh;
 }
 .hotel {
-  font-size: 30px;
+  font-size: 2vw;
   letter-spacing: 7px;
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
@@ -83,7 +84,7 @@ a {
 .nirvana {
   color: white;
   letter-spacing: 60px;
-  font-size: 150px;
+  font-size: 20vw;
   font-family: "Inspiration", cursive;
   font-weight: 400;
   font-style: normal;
@@ -102,7 +103,7 @@ a {
 }
 
 #suites > .card {
-  height: 75%;
+  height: 65%;
   width: 25%;
   background-color: white;
   border-radius: 50px;
@@ -125,7 +126,7 @@ a {
   font-family: "Inria Serif", serif;
   font-weight: 600;
   letter-spacing: 4px;
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin-top: 10%;
   padding-left: 50px;
 }
@@ -163,7 +164,7 @@ a {
 }
 
 .location-info {
-  width: 50ch;
+  max-width: 50ch;
 }
 
 .address-title {
@@ -214,4 +215,59 @@ a {
 }
 .social-logo {
   margin-right: 30px;
+}
+
+@media (aspect-ratio < 1) {
+  .hotel {
+    font-size: 5vh;
+  }
+  .nirvana {
+    font-size: 12vh;
+  }
+  #home {
+    min-height: auto;
+  }
+  #suites {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #suites > .card {
+    margin: 5% auto;
+    width: 60%;
+    padding-bottom: 40px;
+  }
+  .titles {
+    margin: 10% 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  .knowmore {
+    margin: 40px auto 0;
+  }
+  #location {
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 65%;
+    margin: 40px 0;
+    font-size: 3vw;
+  }
+  .footer {
+    height: auto;
+  }
+  .nirvana-logo {
+    margin-top: 50px;
+    max-width: 100%;
+  }
+  .flexcontainer {
+    flex-direction: column;
+  }
+  .icons {
+    justify-content: center;
+  }
 }
